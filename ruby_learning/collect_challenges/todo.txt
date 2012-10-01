@@ -1,0 +1,1 @@
+Make a ruby program to 1. Download ruby-challenge.rubylearning.org 2. parse challenge URLs 3. Parse challenge descriptions from URLs and make folders + descriptions for them.

@@ -1,0 +1,13 @@
+http://rubylearning.com/blog/2010/08/31/rpcfn-economics-101-13/
+http://rubylearning.com/blog/2010/07/31/rpcfn-cycle-tracks-12/
+http://rubylearning.com/blog/2010/06/28/rpcfn-the-game-of-life-11/
+http://rubylearning.com/blog/2010/05/25/rpcfn-business-hours-10/
+http://rubylearning.com/blog/2010/04/29/rpcfn-interactive-fiction-9/
+http://rubylearning.com/blog/2010/04/07/rpcfn-xml-transformer-8/
+http://rubylearning.com/blog/2010/02/23/rpcfn-broadsides-7/
+http://rubylearning.com/blog/2010/01/26/rpcfn-fair-distribution-6/
+http://rubylearning.com/blog/2009/12/27/rpcfn-mazes-5/
+http://rubylearning.com/blog/2009/11/26/rpcfn-rubyfun-4/
+http://rubylearning.com/blog/2009/10/30/rpcfn-short-circuit-3/
+http://rubylearning.com/blog/2009/10/08/rpcfn-average-arrival-time-for-a-flight-2/
+http://rubylearning.com/blog/2009/09/24/rpcfn-shift-subtitle-1/
