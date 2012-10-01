@@ -1,0 +1,27 @@
+  1 import java.io.Console;                                                                                           |  5
+  2 import java.util.regex.Pattern;                                                                                   |  6     public static void main(String... args) {
+  3 import java.util.regex.Matcher;                                                                                   |  7         String string = "Mynde Currie-Kessler (mcurriekessler)";
+  4                                                                                                                   |  8         Pattern p = Pattern.compile(".*");
+  5 public class RegexTestHarness {                                                                                   |  9         Matcher m = p.matcher(string);
+  6                                                                                                                   | 10         String result = m.toMatchResult().group(0);
+  7     public static void main(String[] args){                                                                       | 11         System.out.println(result);
+  8         Console console = System.console();                                                                       | 12     }
+  9         if (console == null) {                                                                                    | 13
+ 10             System.err.println("No console.");                                                                    | 14 }
+ 11             System.exit(1);                                                                                       |~
+ 12         }                                                                                                         |~
+ 13         while (true) {                                                                                            |~
+ 14                                                                                                                   |~
+ 15             Pattern pattern =                                                                                     |~
+ 16                 Pattern.compile(console.readLine("%nEnter your regex: "));                                        |~
+ 17                                                                                                                   |~
+ 18             Matcher matcher =                                                                                     |~
+ 19                 pattern.matcher(console.readLine("Enter input string to search: "));                              |~
+ 20                                                                                                                   |~
+ 21             boolean found = false;                                                                                |~
+ 22             while (matcher.find()) {                                                                              |~
+ 23                 console.format("I found the text" +                                                               |~
+ 24                         " \"%s\" starting at " +                                                                  |~
+ 25                         "index %d and ending at index %d.%n",                                                     |~
+RegexTestHarness.java                                                                               1,1            Top Test.java                                                                                           8,33-39        Bot
+
