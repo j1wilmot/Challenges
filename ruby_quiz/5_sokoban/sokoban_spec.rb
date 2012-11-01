@@ -1,8 +1,8 @@
-require 'sokoban'
+require './sokoban.rb'
 
-describe Sokoban, "#print" do
-	it "should print a word"
+describe Sokoban, "#test" do
+	it "returns 0" do
 		sokoban = Sokoban.new
-		sokoban.print.should eq('test')
+		sokoban.test.should eq(0)
 	end
 end
