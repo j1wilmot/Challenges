@@ -10,3 +10,4 @@ json["data"]["children"].each do |story|
 	puts
 end
 
+# approach copied from the_mighty_skeetadon
