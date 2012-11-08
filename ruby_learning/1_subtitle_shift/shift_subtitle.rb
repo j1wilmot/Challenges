@@ -64,4 +64,31 @@ class Shift
 	end
 end
 
+require 'optparse'
 
+options = {}
+optparse = OptionParser.new do |opts|
+	opts.banner = "Usage: shift_subtitle.rb [options]"
+
+	# Add by default
+	options[:operation] = "ADD"
+	opts.on("-o", "--operation OPERATION", "Perform operation") do |o|
+		abort("Bad operator") unless o == "ADD" || o == "SUB"
+		options[:operation] = o
+	end
+	
+	opts.on(:REQUIRED, "-t", "--time TIME", "Time amount to shift by") do |t|
+		options[:time] = t
+	end
+
+end.parse!
+
+required = [:time]
+missing = required.select { |r| !options.include?(r) }
+unless missing.empty?
+	puts "Missing required flags: #{missing.join(',')}"
+	exit
+end
+
+# parse file and split into time segments
+# output modified segments
