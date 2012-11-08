@@ -1,0 +1,42 @@
+Hail Caesar!
+Posted on October 7, 2011
+MISSION: To accept an input string and perform a Caesar Cipher on it
+SKILLS: Modular Arithmetic, String Operations, Knowledge of ASCII Values
+I usually mention how important it is to write clean code, and that short code doesn’t necessarily mean good code. Today’s challenge, however, is a perfect example of where I’m wrong. To the beginners, I encourage you to work through this problem and understand the basic concepts listed above under “Skills.” To the experienced, go ahead and write a one-liner for this one 
+
+A Caesar Cipher was a tool used by armies to share “encrypted” (by today’s standards, it’s pretty laughable!) messages by shifting each character by a certain amount. For instance, let’s consider the string abc. If we shift each character by 1, ‘a’ goes to ‘b’, ‘b’ goes to ‘c’, and ‘c’ goes to ‘d’. Putting it all together, we get the string bcd. Pretty simple, right? Now, what if we go past the letter ‘z’? Consider the example, zebra, shifted 1 character. ‘e’ goes ‘f’, ‘b’ goes to ‘c’, blah blah blah you get the idea. Now, what about ‘z’? In this special case, adding 1 will bring us back to the beginning of the alphabet. So, the result is afcsb.
+
+Another thing to keep in mind is if we have characters outside of the uppercase and lowercase alphabet. To keep things simple, let’s ignore these. Be sure to also remember that we should not cross the uppercase and lowercase letters. They are separate entities, so let’s shift ‘z’ to ‘a’ and ‘Z’ to ‘A’. Sound good?
+
+As a slight parenthesis, the term ROT13 is a type of Caesar Cipher, more specifically one in which we shift each letter of a string 13 characters. ROT13s are useful because if you apply to it a string twice, you get the original message! Once your code is done, feel free to try it out.
+
+Here’s what my behavior looks like.
+
+airosol:python jordan$ python shift.py
+Enter a string: Hello, World!
+How much do you want to shift? 1
+Cipher: Ifmmp, Xpsme!
+airosol:python jordan$ python shift.py
+Enter a string: zebra
+How much do you want to shift? 1
+Cipher: afcsb
+airosol:python jordan$ python shift.py
+Enter a string: This message will be encoded with ROT13
+How much do you want to shift? 13
+Cipher: Guvf zrffntr jvyy or rapbqrq jvgu EBG13
+airosol:python jordan$ python shift.py
+Enter a string: Guvf zrffntr jvyy or rapbqrq jvgu EBG13
+How much do you want to shift? 13
+Cipher: This message will be encoded with ROT13
+airosol:python jordan$ 
+Bonus points if you…
+
+Read from a file, shift the entire text, and write it to something else. Now you’re encrypting!
+Implement the ability to shift negative numbers as well. That is, a shift of -1 will turn ‘b’ into ‘a’
+Try decrypting messages encoded by other people. (Ukq’na cappejc lnappu ckkz wp pdeo!)
+Jcxg hwp!
+Lqtfcp
+
+
+Comments:
+Nice ruby solution at https://gist.github.com/1296429
