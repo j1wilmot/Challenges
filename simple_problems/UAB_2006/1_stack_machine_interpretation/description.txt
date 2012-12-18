@@ -1,0 +1,39 @@
+Stack Machine Interpretation
+Many virtual machines, e.g. the Java VM, are based on the notion of a run-time stack to hold data. This is like a stack of plates where data may only be removed from or added to the top. Code is of the form:
+PUSH 1
+PUSH 2
+ADD
+RESULT
+=> 3 (output from stack)
+PUSH 1 pushes a 1, PUSH 2 pushes a 2 and ADD removes the top 2 values on the stack, adds them and pushes the result (so the 1 and 2 would be replaced by 3). RESULT is a special operation that will display the current value at the top of the stack.
+Write an interpreter for such stack machine code. In addition to PUSH which will always be followed by an unsigned integer, implement ADD, SUB, MUL, DIV, and RESULT operations. The operators may be abbreviated to A, S, M, D, and R. All operands will be integers. You may assume integer division when implementing DIV.
+Example 1:
+Enter virtual machine commands:
+P 1
+P 2
+A
+P 3
+M
+P 1
+S
+P 2
+D
+R
+=> 4
+Example 2:
+Enter virtual machine commands:
+P 1
+P 2
+P 3
+P 4
+P 5
+M
+A
+P 6
+S
+A
+A
+P 10
+D
+R
+=> 2
