@@ -1,0 +1,3 @@
+class Sokoban
+
+end

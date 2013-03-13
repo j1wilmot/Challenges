@@ -1,0 +1,9 @@
+task default: :test
+
+task :test do
+  ruby 'hangman_spec.rb'
+end
+
+task :run do
+  ruby 'hangman.rb'
+end
