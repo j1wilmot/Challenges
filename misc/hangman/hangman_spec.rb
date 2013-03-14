@@ -79,9 +79,10 @@ describe Hangman do
   end
 
   describe "after all chances are used" do
+    # TODO this test needs work
     before do
-      guess = 'a'
-      CHANCES.times { @hangman.guess guess.next! }
+      letters_not_in_word = %w[z y x w s t m b c]
+      letters_not_in_word.each { |letter| @hangman.guess letter }
     end
 
     it "should be over" do

@@ -21,8 +21,7 @@ class Hangman
   end
 
   def over?
-    return true if out_of_chances || word_has_been_solved
-    return false
+    out_of_chances || word_has_been_solved
   end
 
   def guess(guess)
